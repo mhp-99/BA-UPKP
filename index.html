@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Berita Acara Penyelenggaraan Ujian UPKP IV, V, dan VI Tahun 2026</title>
+<style>
+  :root{
+    --bg:#e9edf3; --card:#fff; --ink:#1f2a3c; --muted:#5d6b82;
+    --line:#c9d2df; --accent:#0b3d7a; --accent-d:#082c58; --err:#c0262d; --ok:#1c7c4a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 "Segoe UI",Roboto,Arial,sans-serif;padding:24px 12px}
+  .form{max-width:720px;margin:0 auto;background:var(--card);border-radius:6px;box-shadow:0 2px 12px rgba(20,40,80,.12);overflow:hidden}
+  .head{text-align:center;padding:28px 28px 18px;border-bottom:4px solid var(--accent)}
+  .head img{height:84px;margin-bottom:12px}
+  .head h1{margin:0 0 6px;font-size:clamp(9px,2.5vw,17px);line-height:1.4;letter-spacing:0;white-space:nowrap;color:var(--accent)}
+  .head h1 .t1{font-size:clamp(12px,3.4vw,24px)}
+  .head p{margin:0;color:var(--muted);font-size:13.5px}
+  .body{padding:24px 28px 32px}
+  .field{margin-bottom:20px}
+  label.lbl,.lbl{display:block;font-weight:600;margin-bottom:6px}
+  .req{color:var(--err)}
+  .sub{font-size:12.5px;color:var(--muted);margin-top:4px}
+  input[type=text],input[type=number],input[type=date],select,textarea{
+    width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:4px;font:inherit;color:inherit;background:#fff}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:0;border-color:var(--accent)}
+  textarea{min-height:100px;resize:vertical}
+  .row{display:flex;gap:12px}
+  .row>div{flex:1}
+  .sub-lbl{font-size:12.5px;color:var(--muted);margin-top:3px}
+  table{width:100%;border-collapse:collapse}
+  th,td{border:1px solid var(--line);padding:6px 8px;text-align:center}
+  th{background:#f1f4f9;font-weight:600}
+  td:first-child{text-align:left;font-weight:600;background:#f8fafc;width:32%}
+  td input{text-align:center;padding:7px 4px}
+  .tbl-wrap{overflow-x:auto}
+  .radio{display:flex;align-items:flex-start;gap:8px;margin:6px 0;cursor:pointer}
+  .radio input{margin-top:4px}
+  .sig-box{border:1px solid var(--line);border-radius:4px;background:#fafbfd}
+  canvas{display:block;width:100%;height:170px;touch-action:none;cursor:crosshair}
+  .sig-bar{display:flex;justify-content:space-between;align-items:center;padding:6px 10px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--muted)}
+  .link{background:none;border:0;color:var(--accent);cursor:pointer;font:inherit;text-decoration:underline;padding:0}
+  .btn{display:block;width:100%;padding:13px;border:0;border-radius:4px;background:var(--accent);color:#fff;font:600 16px inherit;cursor:pointer}
+  .btn:hover{background:var(--accent-d)}
+  .err .lbl{color:var(--err)}
+  .err input,.err select,.err textarea,.err .sig-box{border-color:var(--err)}
+  .msg{display:none;color:var(--err);font-size:12.5px;margin-top:4px}
+  .err .msg{display:block}
+  .hp{position:absolute;left:-9999px;height:0;overflow:hidden}
+  #result{display:none;margin-top:18px;padding:14px;border-radius:4px;background:#e8f5ee;border:1px solid #b5dcc6;color:var(--ok)}
+  #result.bad{background:#fdecec;border-color:#f0b9bb;color:var(--err)}
+  .btn:disabled{opacity:.7;cursor:wait}
+  .btn-sec{padding:8px 14px;border:1px solid var(--accent);background:#fff;color:var(--accent);border-radius:4px;cursor:pointer;font:600 14px inherit}
+  @media(max-width:520px){.row{flex-direction:column;gap:0}.body{padding:20px 16px 28px}.head{padding:24px 10px 16px}}
+  @media print{
+    body{background:#fff;padding:0}.form{box-shadow:none}
+    .btn,#result,.sig-bar,.hp{display:none!important}
+  }
+</style>
+</head>
+<body>
+<form class="form" id="ba" novalidate>
+  <div class="head">
+    <img src="https://www.jotform.com/uploads/teduhafr/form_files/Logo_kementerian_keuangan_republik_indonesia.5f6d900de17a91.02354080.png" alt="Logo Kementerian Keuangan RI" onerror="this.style.display='none'">
+    <h1><span class="t1">BERITA ACARA PENYELENGGARAAN UJIAN</span><br>UJIAN PENYESUAIAN KENAIKAN PANGKAT IV, V, DAN VI TAHUN 2026</h1>
+    <p>TIM KERJA UJI/SERTIFIKASI NON JF DAN PENGELOLAAN TES<br>PUSAT PEMBINAAN JABATAN FUNGSIONAL DAN PENJAMINAN MUTU</p>
+  </div>
+
+  <div class="body">
+    <div class="field" data-req>
+      <label class="lbl" for="nd">Nama <span class="req">*</span></label>
+      <input type="text" id="nd" name="nama" autocomplete="name">
+      <div class="msg">Nama wajib diisi.</div>
+    </div>
+
+    <div class="field">
+      <label class="lbl" for="posisi">Posisi</label>
+      <select id="posisi" name="posisi">
+        <option value="">Pilih posisi</option>
+        <option>Pengawas</option>
+        <option>Koordinator</option>
+        <option>Panitia</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label class="lbl" for="tgl">Hari Tanggal Ujian</label>
+      <input type="date" id="tgl" name="hari_tanggal">
+      <div class="sub" id="hari"></div>
+    </div>
+
+    <div class="field">
+        <label class="lbl" for="sesi">Sesi</label>
+        <select id="sesi" name="sesi" style="max-width:140px">
+          <option value="">Pilih sesi</option>
+          <option>1 (Pagi)</option>
+          <option>2 (Siang)</option>
+        </select>
+      </div>
+
+    <div class="field">
+      <label class="lbl" for="room">Room Ujian</label>
+      <input type="text" id="room" name="room_ujian" style="max-width:140px">
+    </div>
+
+    <div class="field">
+      <label class="lbl" for="mata">Mata Ujian</label>
+      <select id="mata" name="mata_ujian">
+        <option value="">Pilih mata ujian</option>
+        <option>TPA-TSKKWK</option>
+        <option>Psikotes</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <span class="lbl">Kehadiran Peserta</span>
+      <div class="sub" id="hintMata">Pilih Mata Ujian terlebih dahulu.</div>
+      <div class="tbl-wrap" id="tblWrap" hidden>
+        <table>
+          <thead><tr><th></th><th data-g="tpa">TPA</th><th data-g="tpa">TSKKWK</th><th data-g="psi">Psikotes</th></tr></thead>
+          <tbody>
+            <tr><td>Hadir</td>
+              <td data-g="tpa"><input type="number" min="0" name="hadir_tpa" aria-label="Hadir TPA"></td>
+              <td data-g="tpa"><input type="number" min="0" name="hadir_tskkwk" aria-label="Hadir TSKKWK"></td>
+              <td data-g="psi"><input type="number" min="0" name="hadir_psikotes" aria-label="Hadir Psikotes"></td></tr>
+            <tr><td>Tidak Hadir</td>
+              <td data-g="tpa"><input type="number" min="0" name="tidak_tpa" aria-label="Tidak hadir TPA"></td>
+              <td data-g="tpa"><input type="number" min="0" name="tidak_tskkwk" aria-label="Tidak hadir TSKKWK"></td>
+              <td data-g="psi"><input type="number" min="0" name="tidak_psikotes" aria-label="Tidak hadir Psikotes"></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="field">
+      <span class="lbl">Pelaksanaan Ujian</span>
+      <label class="radio"><input type="radio" name="pelaksanaan" value="Aman, Tertib, Lancar"> Aman, Tertib, Lancar</label>
+      <label class="radio"><input type="radio" name="pelaksanaan" value="Ada Kendala"> Ada Kendala - Tuliskan di Catatan</label>
+    </div>
+
+    <div class="field">
+      <label class="lbl" for="catatan">Catatan</label>
+      <textarea id="catatan" name="catatan"></textarea>
+    </div>
+
+    <div class="field" data-req id="sigField">
+      <span class="lbl">Signature <span class="req">*</span></span>
+      <div class="sig-box">
+        <canvas id="sig" aria-label="Area tanda tangan"></canvas>
+        <div class="sig-bar"><span>Tanda tangan di area di atas</span><button type="button" class="link" id="clr">Hapus</button></div>
+      </div>
+      <div class="msg">Tanda tangan wajib diisi.</div>
+    </div>
+
+    <div class="hp" aria-hidden="true">
+      <label>Should be Empty: <input type="text" name="website" id="hp" tabindex="-1" autocomplete="off"></label>
+    </div>
+
+    <button type="submit" class="btn">Kirim Berita Acara</button>
+
+    <div id="result" role="status"></div>
+  </div>
+</form>
+
+<script>
+(function(){
+  var form=document.getElementById('ba');
+  var canvas=document.getElementById('sig'), ctx=canvas.getContext('2d');
+  var drawing=false, signed=false, last=null;
+
+  function fit(){
+    var data=signed?canvas.toDataURL():null;
+    var r=canvas.getBoundingClientRect(), d=window.devicePixelRatio||1;
+    canvas.width=r.width*d; canvas.height=r.height*d;
+    ctx.scale(d,d); ctx.lineWidth=2; ctx.lineCap='round'; ctx.lineJoin='round'; ctx.strokeStyle='#0a1f44';
+    if(data){var im=new Image();im.onload=function(){ctx.drawImage(im,0,0,r.width,r.height)};im.src=data;}
+  }
+  function pos(e){var r=canvas.getBoundingClientRect();return{x:e.clientX-r.left,y:e.clientY-r.top}}
+  canvas.addEventListener('pointerdown',function(e){drawing=true;last=pos(e);canvas.setPointerCapture(e.pointerId);
+    ctx.beginPath();ctx.arc(last.x,last.y,1,0,6.3);ctx.stroke();signed=true;
+    document.getElementById('sigField').classList.remove('err');});
+  canvas.addEventListener('pointermove',function(e){if(!drawing)return;var p=pos(e);
+    ctx.beginPath();ctx.moveTo(last.x,last.y);ctx.lineTo(p.x,p.y);ctx.stroke();last=p;});
+  ['pointerup','pointercancel'].forEach(function(t){canvas.addEventListener(t,function(){drawing=false})});
+  document.getElementById('clr').onclick=function(){var r=canvas.getBoundingClientRect();ctx.clearRect(0,0,r.width,r.height);signed=false;};
+  window.addEventListener('resize',fit); fit();
+
+  // Nama hari otomatis
+  var hariN=['Minggu','Senin','Selasa','Rabu','Kamis','Jumat','Sabtu'];
+  var bln=['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
+  function fmtTgl(v){if(!v)return '';var d=new Date(v+'T00:00:00');return hariN[d.getDay()]+', '+d.getDate()+' '+bln[d.getMonth()]+' '+d.getFullYear();}
+  document.getElementById('tgl').addEventListener('change',function(){document.getElementById('hari').textContent=fmtTgl(this.value)});
+
+
+  // Kolom kehadiran mengikuti Mata Ujian
+  var mata=document.getElementById('mata'), tw=document.getElementById('tblWrap'), hint=document.getElementById('hintMata');
+  function updMata(){
+    var v=mata.value, g=v==='Psikotes'?'psi':(v?'tpa':'');
+    tw.hidden=!g; hint.style.display=g?'none':'block';
+    tw.querySelectorAll('[data-g]').forEach(function(el){
+      var on=el.getAttribute('data-g')===g;
+      el.style.display=on?'':'none';
+      var i=el.querySelector('input'); if(i){i.disabled=!on; if(!on)i.value='';}
+    });
+  }
+  mata.addEventListener('change',updMata);
+  form.addEventListener('reset',function(){setTimeout(updMata,0)});
+  updMata();
+
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(document.getElementById('hp').value) return; // honeypot
+    var ok=true;
+    var nd=document.getElementById('nd'), f1=nd.closest('.field');
+    f1.classList.toggle('err',!nd.value.trim()); if(!nd.value.trim()) ok=false;
+    var sf=document.getElementById('sigField');
+    sf.classList.toggle('err',!signed); if(!signed) ok=false;
+    if(!ok){var first=form.querySelector('.err');first.scrollIntoView({behavior:'smooth',block:'center'});return;}
+    var fd=new FormData(form); var o={};
+    fd.forEach(function(v,k){if(k!=='website')o[k]=v});
+    o.hari_tanggal_teks=fmtTgl(o.hari_tanggal);
+    o.signature=cropSig();
+    kirim(o);
+  });
+
+  // Potong area kosong di sekitar tanda tangan agar tampil proporsional di PDF
+  function cropSig(){
+    var w=canvas.width,h=canvas.height,d=ctx.getImageData(0,0,w,h).data;
+    var x0=w,y0=h,x1=0,y1=0;
+    for(var y=0;y<h;y++)for(var x=0;x<w;x++){
+      if(d[(y*w+x)*4+3]>0){if(x<x0)x0=x;if(x>x1)x1=x;if(y<y0)y0=y;if(y>y1)y1=y;}
+    }
+    if(x1<x0)return canvas.toDataURL('image/png');
+    var pad=8;x0=Math.max(0,x0-pad);y0=Math.max(0,y0-pad);x1=Math.min(w-1,x1+pad);y1=Math.min(h-1,y1+pad);
+    var c=document.createElement('canvas');c.width=x1-x0+1;c.height=y1-y0+1;
+    c.getContext('2d').drawImage(canvas,x0,y0,c.width,c.height,0,0,c.width,c.height);
+    return c.toDataURL('image/png');
+  }
+
+  // Alamat Web App Google Apps Script (lihat petunjuk pemasangan)
+  var SCRIPT_URL='https://script.google.com/macros/s/AKfycbwCsODSJca5It3JBbD-4kreVrrcGaMU7qUbH3UnGxJplGUUZx9_mUGZwlWzhy0YpxJ_Pg/exec';
+
+  function info(teks,gagal){
+    var res=document.getElementById('result');
+    res.className=gagal?'bad':''; res.textContent=teks; res.style.display='block';
+    res.scrollIntoView({behavior:'smooth',block:'center'});
+  }
+  function kirim(o){
+    if(!SCRIPT_URL){info('Alamat Google Sheet belum diatur. Isi SCRIPT_URL pada file ini.',true);return;}
+    var btn=form.querySelector('.btn'); btn.disabled=true; btn.textContent='Mengirim...';
+    fetch(SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(o)})
+      .then(function(){
+        info('Berita acara berhasil dikirim.',false);
+        form.reset();document.getElementById('clr').click();document.getElementById('hari').textContent='';
+      })
+      .catch(function(){info('Gagal mengirim. Periksa koneksi internet lalu coba lagi.',true)})
+      .then(function(){btn.disabled=false;btn.textContent='Kirim Berita Acara';});
+  }
+})();
+</script>
+</body>
+</html>
